@@ -3,91 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <title>Жадан Дмитро</title>
-  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    #logo {
+      height: 40px;
+      max-width: 100px;
+    }
+    footer {
+      background-color: #22272d;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <img src="logo_transparent.png" alt="Logo" id="logo">
-    <nav>
-      <input id="burger-toggle" type="checkbox">
-      <label for="burger-toggle">
-        <span></span>
-      </label>
-      <ul class="menu">
-        <li><a class="form_href" href="#form" id="Forma">Форма</a></li>
-        <li><a class="form_href" href="#main1" id = "Mein">Мейн</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="sidebar">
-    <a href="https://uk.wikipedia.org/wiki/Тичина_Павло_Григорович" target="_blank">Wikipedia</a>
-  </div>
-  <div class="main-container">
-    <h1 id="main1">Павло Тичина</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlx1iBPy8mdaxYxpapNofhs9zKT26ufSY7fny6P50th7oSfr3BNZTTne88hIMWPi3FU91fOl8LKIl0dfbIf4hozPMIUW1AfS3G6n7To7A" alt="Павло Тичина">
-    <p>Павло́ Григо́рович Тичи́на - український радянський поет, перекладач, публіцист, політик, громадський та державний діяч доби УНР та УРСР. Старший брат Євгена Тичини.</p>
-    <div class="relative-box">
-      <img src="https://f.cultura.city/photo/12930/vnHlD.jpg" alt="Збірники"> 
+<body class="bg-light">
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo_transparent.png" alt="Logo" id="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#form">Форма</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#main1">Мейн</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <table border="1">
-      <caption>Хронологічна таблиця житття Павла Тичини</caption>
-      <tr>
-        <th>Рік</th>
-        <th>Подія</th>
-      </tr>
-      <tr>
-        <td>23 січня 1891</td>
-        <td>Народився у с. Піски Чернігівської губернії.</td>
-      </tr>
-      <tr>
-        <td>1897</td>
-        <td>Почав навчання у земській початковій школі.</td>
-      </tr>
-      <tr>
-        <td>1912</td>
-        <td>Вперше друкується твір «Ви знаєте, як липа шелестить».</td>
-      </tr>
-      <tr>
-        <td>1913-1917</td>
-        <td>Навчання у Київському комерційному інституті.</td>
-      </tr>
-      <tr>
-        <td>1923</td>
-        <td>Переїздить до Харкова, входить до літературної організації «Гарт».</td>
-      </tr>
-      <tr>
-        <td>1927</td>
-        <td>Входить до організаії ВАПЛІТЕ.</td>
-      </tr>
-      <tr>
-        <td>16.09.1967</td>
-        <td>Помер у Києві.</td>
-      </tr>
-    </table>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <aside class="col-12 col-md-3 bg-white shadow rounded text-center py-3 mb-3" style="width: 200px; height: 100px;">
+        <a href="https://uk.wikipedia.org/wiki/Тичина_Павло_Григорович" target="_blank">Wikipedia</a>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="col-12 col-md-9 mt-4">
+        <div class="bg-white shadow rounded p-4 mb-4">
+          <h1 id="main1" class="text-center">Павло Тичина</h1>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlx1iBPy8mdaxYxpapNofhs9zKT26ufSY7fny6P50th7oSfr3BNZTTne88hIMWPi3FU91fOl8LKIl0dfbIf4hozPMIUW1AfS3G6n7To7A" alt="Павло Тичина" class="img-fluid rounded mb-3 mx-auto d-block">
+          <p class="text-muted">Павло́ Григо́рович Тичи́на - український радянський поет, перекладач, публіцист, політик, громадський та державний діяч доби УНР та УРСР. Старший брат Євгена Тичини.</p>
+          <div class="mb-3">
+            <img src="https://f.cultura.city/photo/12930/vnHlD.jpg" alt="Збірники" class="img-fluid rounded">
+          </div>
+          <table class="table table-bordered">
+            <caption class="caption-top text-center fw-bold">Хронологічна таблиця житття Павла Тичини</caption>
+            <thead class="table-dark">
+              <tr>
+                <th>Рік</th>
+                <th>Подія</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>23 січня 1891</td>
+                <td>Народився у с. Піски Чернігівської губернії.</td>
+              </tr>
+              <tr>
+                <td>1897</td>
+                <td>Почав навчання у земській початковій школі.</td>
+              </tr>
+              <tr>
+                <td>1912</td>
+                <td>Вперше друкується твір «Ви знаєте, як липа шелестить».</td>
+              </tr>
+              <tr>
+                <td>1913-1917</td>
+                <td>Навчання у Київському комерційному інституті.</td>
+              </tr>
+              <tr>
+                <td>1923</td>
+                <td>Переїздить до Харкова, входить до літературної організації «Гарт».</td>
+              </tr>
+              <tr>
+                <td>1927</td>
+                <td>Входить до організаії ВАПЛІТЕ.</td>
+              </tr>
+              <tr>
+                <td>16.09.1967</td>
+                <td>Помер у Києві.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="form-container bg-white shadow rounded p-4">
+          <h2 id="form" class="text-center">Опитування щодо якості сайту</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Ваше Ім'я</label>
+              <input type="text" id="name" class="form-control" placeholder="Введіть ваше ім'я">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Ваша пошта:</label>
+              <input type="text" id="email" class="form-control" placeholder="Введіть вашу пошту">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Оберіть вашу стать</label>
+              <div>
+                <input type="radio" id="male" name="gender" value="male" class="form-check-input">
+                <label for="male" class="form-check-label">Чоловіча</label>
+              </div>
+              <div>
+                <input type="radio" id="female" name="gender" value="female" class="form-check-input">
+                <label for="female" class="form-check-label">Жіноча</label>
+              </div>
+              <div>
+                <input type="radio" id="other" name="gender" value="other" class="form-check-input">
+                <label for="other" class="form-check-label">Інше</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="rating" class="form-label">Оцініть наш сайт</label>
+              <select id="rating" class="form-select">
+                <option value="excellent">Відмінно</option>
+                <option value="good">Добре</option>
+                <option value="average">Задовільно</option>
+                <option value="poor">Погано</option>
+                <option value="terrible">Жахливо</option>
+              </select>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" id="consent" class="form-check-input">
+              <label for="consent" class="form-check-label">Підтверджую, що дозволяю обробляти мої дані</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Надіслати</button>
+          </form>
+        </div>
+      </main>
+    </div>
   </div>
-  <div class="secondary-container">
-    <h2 id="form">Опитування щодо якості сайту</h2>
-    <form>
-      <p class="p2">Ваше Ім'я</p>
-      <input type="text" name="name" placeholder="Введіть ваше ім'я"><br>
-      <p class = "p2">Ваша пошта:</p>
-      <input type="text" name="email" placeholder="Введіть вашу пошту"><br>
-      <p class = "p2">Оберіть вашу стать</p>
-      <input type="radio" name="gender" value="male"> Чоловіча
-      <input type="radio" name="gender" value="female"> Жіноча
-      <input type="radio" name="gender" value="other"> Інше
-      <p class = "p2">Оцініть наш сайт</p>
-      <select name="selection">
-        <option value="excellent">Відмінно</option>
-        <option value="good">Добре</option>
-        <option value="average">Задовільно</option>
-        <option value="poor">Погано</option>
-        <option value="terrible">Жахливо</option>
-      </select><br>
-      <input type="checkbox"><p class="p3">Підтверджую, що дозвволяю обробляти мої дані</p><br>
-      <input type="submit" value="Надіслати">
-    </form>
-  </div>
-    <footer>Виконав: Жадан Дмитро</footer>
+
+  <footer>
+    Виконав: Жадан Дмитро
+  </footer>
+
+
 </body>
 </html>
